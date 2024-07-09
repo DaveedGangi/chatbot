@@ -1,0 +1,61 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+
+.heading{
+    color:brown;
+
+ 
+}
+
+.container-fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: darkgrey;
+    height:100vh;
+    background-size:cover;
+    padding-left:77px;
+    
+    padding-bottom:88px;
+    background-image: url("https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-image: url("https://wallpaperaccess.com/full/8691990.png");
+    background-image: url("https://wallpaperaccess.com/full/8692012.jpg");
+    margin:0px;
+}
+
+iframe{
+    width:350px;
+    height:480px;
+}
+
+.small-screen-heading{
+    display: none;
+}
+
+@media screen and (max-width:767px){
+    iframe{width:300px;}
+    .container-fluid{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        padding-left: 0px;
+        background-image: url("https://cdn.pixabay.com/photo/2021/01/08/10/51/ai-5899615_1280.jpg");
+        background-image: url("https://img.freepik.com/free-vector/gradient-rpa-illustration_23-2149247162.jpg?w=740&t=st=1720512465~exp=1720513065~hmac=037f760e978ab04aed7512e8077f3e828c2e598f46e5dff52134b99f5bc88906");
+        background-image: url("https://images.pexels.com/photos/8386359/pexels-photo-8386359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+        background-image: url("https://images.pexels.com/photos/4388593/pexels-photo-4388593.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+   
+    }
+    .heading{
+            order: 1;
+            display: none;
+            
+        }
+        .small-screen-heading{
+            display: block;
+            color:rgb(37, 199, 191);
+            
+        }
+}
